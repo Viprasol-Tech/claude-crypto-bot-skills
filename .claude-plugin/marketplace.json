@@ -1,0 +1,26 @@
+{
+  "name": "claude-crypto-bot-skills",
+  "description": "Free Claude Code skills for building crypto trading bots that work: exchange API signing, order precision filters, rate limits, order book sync, order lifecycle, perpetual futures risk and Hyperliquid/Solana bots.",
+  "owner": {
+    "name": "Viprasol Tech",
+    "url": "https://viprasol.com"
+  },
+  "plugins": [
+    {
+      "name": "crypto-bots",
+      "source": "./plugins/crypto-bots",
+      "description": "7 skills: exchange-api-auth, order-precision, rate-limits, orderbook-sync, order-lifecycle, perps-risk and dex-bots, with tested precision, order book and perps scripts.",
+      "category": "finance",
+      "tags": [
+        "crypto",
+        "trading-bot",
+        "binance",
+        "bybit",
+        "okx",
+        "hyperliquid",
+        "solana",
+        "perpetual-futures"
+      ]
+    }
+  ]
+}

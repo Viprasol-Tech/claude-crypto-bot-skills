@@ -1,0 +1,31 @@
+{
+  "name": "crypto-bots",
+  "displayName": "Crypto Bots",
+  "version": "1.0.0",
+  "description": "Claude Code skills for crypto bot engineering: Binance/Bybit/OKX/Coinbase/Kraken request signing, tick/step/notional filters, rate limits and bans, local order book sync, client order IDs and reconciliation, Binance algo orders, perpetual futures PnL, funding and liquidation maths, and Hyperliquid and Jupiter/Solana bots.",
+  "author": {
+    "name": "Viprasol Tech",
+    "email": "support@viprasol.com",
+    "url": "https://viprasol.com"
+  },
+  "homepage": "https://github.com/Viprasol-Tech/claude-crypto-bot-skills",
+  "repository": "https://github.com/Viprasol-Tech/claude-crypto-bot-skills",
+  "license": "MIT",
+  "keywords": [
+    "crypto",
+    "trading-bot",
+    "binance",
+    "bybit",
+    "okx",
+    "coinbase",
+    "kraken",
+    "hyperliquid",
+    "solana",
+    "jupiter",
+    "order-book",
+    "perpetual-futures",
+    "liquidation",
+    "rate-limits",
+    "claude-code-skills"
+  ]
+}
