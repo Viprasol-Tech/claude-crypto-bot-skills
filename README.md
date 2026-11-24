@@ -58,6 +58,10 @@ claude plugin marketplace add Viprasol-Tech/claude-crypto-bot-skills
 claude plugin install crypto-bots@claude-crypto-bot-skills
 ```
 
+Want every Viprasol plugin? Add the [Viprasol marketplace](https://github.com/Viprasol-Tech/claude-plugins) once:
+`claude plugin marketplace add Viprasol-Tech/claude-plugins`, then
+`claude plugin install <plugin>@viprasol`.
+
 **Option B: installer** (copies the skills to `~/.claude/skills`)
 
 ```bash
