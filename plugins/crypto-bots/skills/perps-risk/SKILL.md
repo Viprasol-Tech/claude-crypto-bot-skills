@@ -15,15 +15,14 @@ so verify against the current docs for your symbols. Not financial advice.
 ## Calculator
 
 ```bash
-P=${CLAUDE_SKILL_DIR}/scripts/perps_calc.py
-python $P pnl --side long --qty 0.5 --entry 60000 --exit 61500
-python $P pnl --side short --qty 100 --entry 50000 --exit 45500 --inverse --contract 100
-python $P funding --side long --qty 2 --mark 3500 --rate 0.0001 --intervals-per-day 3
-python $P margin --qty 1 --price 60000 --leverage 10 --mmr 0.004 --cum 0
-python $P liq-binance --side long --qty 1 --entry 60000 --wallet 6000 --mmr 0.004 --cum 0
-python $P liq-binance --side long --qty 3683.979 --entry 1456.84 --wallet 1535443.01 \
+python ${CLAUDE_SKILL_DIR}/scripts/perps_calc.py pnl --side long --qty 0.5 --entry 60000 --exit 61500
+python ${CLAUDE_SKILL_DIR}/scripts/perps_calc.py pnl --side short --qty 100 --entry 50000 --exit 45500 --inverse --contract 100
+python ${CLAUDE_SKILL_DIR}/scripts/perps_calc.py funding --side long --qty 2 --mark 3500 --rate 0.0001 --intervals-per-day 3
+python ${CLAUDE_SKILL_DIR}/scripts/perps_calc.py margin --qty 1 --price 60000 --leverage 10 --mmr 0.004 --cum 0
+python ${CLAUDE_SKILL_DIR}/scripts/perps_calc.py liq-binance --side long --qty 1 --entry 60000 --wallet 6000 --mmr 0.004 --cum 0
+python ${CLAUDE_SKILL_DIR}/scripts/perps_calc.py liq-binance --side long --qty 3683.979 --entry 1456.84 --wallet 1535443.01 \
     --mmr 0.10 --cum 135365 --other-mm 71200.81144 --other-upnl -56354.57      # cross
-python $P liq-bybit --side long --qty 1 --entry 40000 --leverage 50 --mmr 0.005 \
+python ${CLAUDE_SKILL_DIR}/scripts/perps_calc.py liq-bybit --side long --qty 1 --entry 40000 --leverage 50 --mmr 0.005 \
     --extra-margin 3000 --taker-fee 0.00055
 ```
 

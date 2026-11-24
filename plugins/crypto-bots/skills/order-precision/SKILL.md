@@ -14,10 +14,9 @@ re-check minimums **after** rounding. Facts checked November 2026.
 ## Tool
 
 ```bash
-O=${CLAUDE_SKILL_DIR}/scripts/order_precision.py
-python $O --side BUY --price 64123.456 --qty 0.0012345 --tick 0.01 --step 0.00001 --min-qty 0.00001 --min-notional 5
-python $O --exchange-info exchangeInfo.json --symbol BTCUSDT --side SELL --price 64123.451 --qty 0.0012345
-python $O --market --exchange-info exchangeInfo.json --symbol ETHUSDT --side BUY --qty 2.5
+python ${CLAUDE_SKILL_DIR}/scripts/order_precision.py --side BUY --price 64123.456 --qty 0.0012345 --tick 0.01 --step 0.00001 --min-qty 0.00001 --min-notional 5
+python ${CLAUDE_SKILL_DIR}/scripts/order_precision.py --exchange-info exchangeInfo.json --symbol BTCUSDT --side SELL --price 64123.451 --qty 0.0012345
+python ${CLAUDE_SKILL_DIR}/scripts/order_precision.py --market --exchange-info exchangeInfo.json --symbol ETHUSDT --side BUY --qty 2.5
 ```
 
 It rounds buy prices **down** and sell prices **up** to the tick (never more

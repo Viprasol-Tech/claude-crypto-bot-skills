@@ -36,10 +36,9 @@ book. Rules below are Binance's documented procedures (checked November 2026).
 ## Engine
 
 ```bash
-S=${CLAUDE_SKILL_DIR}/scripts/book_sync.py
-python $S replay snapshot.json events.jsonl --mode spot      # exit 3 = resync needed
-python $S replay snapshot.json events.jsonl --mode futures
-python $S --self-test
+python ${CLAUDE_SKILL_DIR}/scripts/book_sync.py replay snapshot.json events.jsonl --mode spot      # exit 3 = resync needed
+python ${CLAUDE_SKILL_DIR}/scripts/book_sync.py replay snapshot.json events.jsonl --mode futures
+python ${CLAUDE_SKILL_DIR}/scripts/book_sync.py --self-test
 ```
 
 `LocalBook` in the script implements both rule sets with Decimal prices and
